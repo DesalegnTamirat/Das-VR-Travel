@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a57ca790d9.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/images/icons/">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Das VR Travel</title>
+</head>
+
+
+<body>
+  <header class="header container">
+    <p class="logo">Das VR Travel</p>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="#" class="btn">
+          Home
+        </a></li>
+        <li><a href="#steps" class="btn">
+          How it works
+        </a></li>
+        <li><a href="#places-to-visit" class="btn">
+          Destinations
+        </a></li>
+        <li><a href="#testimonials" class="btn">
+          Testimonials
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+  <section class="section-hero">
+    <div class="hero container">
+      <div class="hero-text">  
+        <h1 class="primary-heading">
+          Travel the World from the Comfort of Your Home
+        </h1>
+        <p class="hero-description"></p>
+        <a href="#" class="btn cta">Start Your Adventure</a>
+        <a href="#" class="btn outline ml-3">Learn More </a>
+      </div>
+      <img src="images/hero2.png" class=" hero-img" alt="">
+    </div>
+  </section>
+
+  <section class="product-overview">
+    <div class="product-container">
+      <h2 class="heading-secondary">Discover the World Without Limits
+      </h2>
+      <p>Das VR Travel lets you explore some of the world's most breathtaking locations from the comfort of your home. Whether you're longing to stroll down the bustling streets of Tokyo, wander the historic halls of Rome, or relax on a Caribbean beach, our VR platform takes you there. </p>
+      <a href="#" class="btn">
+        Explore now
+      </a>
+    </div>
+  </section>
+
+  <section class="section-steps" id="steps">
+    <div class="guide container">  
+      <h2 class="heading-secondary">Find Your happiness🥰 in life</h2>
+      <p>Here is how you can find pleasure in life with just 3 steps:</p>
+      <div class="steps">
+        <div class="step">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Step 1</h3>
+          <p>Choose a Destination - Pick from our list of stunning locations.</p>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-headset"></i>
+          <h3>Step 2</h3>
+          <p>Put on Your VR Headset - Get ready for an immersive experience.</p>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-eye"></i>
+          <h3>Step 3</h3>
+          <p>Explore! - Walk the streets, visit landmarks, and see the sights.</p>
+        </div>
+      </div>
+        <a href="#places-to-visit" class="btn">Places to Visit</a>
+  </section>
+
+  <section class="section-testimonials" id="testimonials">
+    <h2>Members who found their happiness</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="images/testimonials/person6.jpg" alt="">
+        <div class="testimonial-text"><p>I have never experienced something like this before. It is miracle. Experiencing different cute volcanos is beyond everything</p>
+        </div>
+        <p></p>
+      </div>
+      <i class="fa-solid fa-caret-right caret caret-right"></i>
+      <i class="caret caret-left fa-solid fa-caret-left"></i>
+      <div class="dots">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="selected"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="places-to-visit" class="section-destination">
+    <div class="container">
+    <h2 class="heading-secondary">
+      Explore Our Destinations
+    </h2>
+    <div class="destinations container">
+      <div><img src="/images/places/place1.jpg" alt="">
+      <a href="#" class="btn">View in VR</a>
+      </div>
+      <div><img src="/images/places/place2.jpg" alt="">
+      <a href="#" class="btn">View in VR</a>
+      </div>
+      <div class="big-height"><img src="/images/places/place3.jpg" alt="">
+      <a href="#" class="btn">View in VR</a>
+      </div>
+      <div><img src="/images/places/place4.jpg" alt="">
+      <a href="#" class="btn">View in VR</a>
+      </div>
+      <div><img src="/images/places/place5.jpg" alt="">
+      <a href="#" class="btn">View in VR</a>
+      </div>
+      <div><img src="/images/places/place6.jpg" alt="">
+      <a href="#" class="btn">View in VR</a>
+      </div>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer">
+  <div class="contact-info">
+    <p><span>Email:</span> desalegntamirateshetu@gmail.com</p>
+    <p>
+      <span>Phonenumber:</span> +251-979474672
+    </p>
+    <p>
+
+      <span>Address:</span> Addis Ababa Ethiopia
+    </p>
+  </div>
+  <div class="links">
+    <a href="">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    <a href=""><i class="fa-brands fa-github"></i></a>
+  </div>
+  <div class="donate"><button onclick="handleClick()">Donate</button>
+    <p class="hidden-text">
+      1000-251-974-218 😉😂
+    </p>
+  </div>
+
+</div>
+</footer>
+
+<script>
+  
+  function handleClick() {
+    const hidden = document.querySelector(".hidden-text");
+    console.log(hidden);
+    hidden.classList.toggle("visible");
+  }
+</script>
+</body>
+</html>
