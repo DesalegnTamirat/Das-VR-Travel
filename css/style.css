@@ -383,7 +383,7 @@ tints:
 
 /* product overview */
 .product-overview {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/showcase.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/../images/showcase.png);
   
   background-repeat: no-repeat;
   background-position: center;
