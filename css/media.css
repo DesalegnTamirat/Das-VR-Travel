@@ -1,0 +1,173 @@
+@media(max-width: 78em) {
+  html {
+    font-size:56%;
+  }
+
+  .primary-heading {
+    font-size: 4.2rem;
+  }  
+
+  .main-nav a{
+    padding: 1.2rem 1.5rem;
+  }
+
+  .product-overview .heading-secondary {
+    font-size: 6.7rem;
+  }
+
+  .testimonial {
+    gap: 6rem;
+  }
+
+  .destinations {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media(max-width: 62em) {
+  html {
+    font-size:50%;
+  }
+
+  .primary-heading {
+    font-size: 3.8rem;
+  }
+
+  .main-nav a{
+    padding: 1.2rem;
+  }
+
+  .product-overview .heading-secondary {
+    font-size: 6rem;
+  }
+
+  .testimonial {
+    gap: 5rem;
+  }
+
+  footer .footer {
+    flex-direction: column;
+    gap: 4.7rem;
+    align-items: center;
+    padding: 7rem;
+  }
+
+  .contact-info {
+    margin-left: 6rem;
+  }
+
+  footer .footer .links {
+    gap: 6rem;
+  }
+}
+
+
+@media(max-width: 50em) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 15rem 5rem;
+  }
+
+  .primary-heading {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero img {
+    width: 70%;
+    display: inline-block;
+    margin: 5rem auto 1rem;
+  }
+  
+  .product-container .heading-secondary {
+    font-size: 6rem; 
+  }
+
+  .testimonials {
+    width: 80%;
+  }
+
+  .testimonial {
+    gap: 4rem;
+  }
+  
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
+  }
+  
+}
+
+
+@media(max-width: 38em) {
+  html {
+    font-size: 30%;
+  }
+
+  .hero {
+    padding: 0 5rem 3rem;
+  }
+
+  .primary-heading {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+  }
+
+  .hero img {
+    width: 70%;
+    display: inline-block;
+    margin: 5rem auto 1rem;
+  }
+  
+  .product-container .heading-secondary {
+    font-size: 6rem; 
+  }
+
+  .testimonials {
+    width: 80%;
+  }
+
+  .testimonial {
+    gap: 4rem;
+  }
+
+  .dots {transform: translate(-20%, 3rem);}
+   
+  .cta, .outline {
+    display: block;
+    max-width: 25rem;
+    margin: 2.2rem auto 0;
+  }
+
+  .section-destination .destinations {
+    grid-template-columns: 1fr;
+  }
+
+  .destination {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    max-height: 60rem
+  }
+
+}
+
+
+
+

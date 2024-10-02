@@ -1,100 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+/* Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-
-/* Main Styles */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Intel", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-  background-color: #ebf5fec7;
-}
-
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-brand color:
-  #339af0
-
-tints:
-   #D6EBFC
-*/
-
-.primary-heading{
-  font-size: 4.8rem;
-  font-weight: 800;
-  color: #333;
-  margin-bottom: 8rem;
-  letter-spacing: -0.8px;
-  line-height: 1.1;
-}
-
-
-
-
-/* Utility classes */
-.container {
-  max-width: 1400rem;
-  margin: auto;
-  padding: 0 4.8rem;
-}
-
-.ml-1 {
-  margin-left: 0.8rem;
-}
-.ml-2 {
-  margin-left: 1.2rem;
-}
-.ml-3 {
-  margin-left: 1.6rem;
-}
-.ml-4 {
-  margin-left: 2.4rem;
-}
-
-.btn {
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 1.2rem 2.4rem;
-  border-radius: 1.2rem;
-}
-
-.cta {
-  background-color: #339af0;
-  font-weight: 700;
-  color: #fff;
-}
-
-.cta:hover {
-  background: #297BC0;
-}
-
-.outline {
-  background-color: #C2E1FB;
-  color: #222;
-  font-weight: 500;
-}
-
-.outline:hover {
-  background-color: #99CDF8;
-}
-
 
 /* Header */
 .header {
@@ -102,8 +7,8 @@ tints:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 7rem;
-  max-width: 1400rem;
+  height: 9rem;
+  padding: 0 5rem;
 }
 
 .logo {
@@ -127,11 +32,14 @@ tints:
 .main-nav a {
   color: #444;
   font-weight: 600;
+  padding: 1.2rem 2rem;
 }
 
 .main-nav a:hover {
   color: #297BC0;
 }
+
+
 
 
 /* Hero section */
@@ -145,7 +53,7 @@ tints:
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2.4rem;
+  gap: 4.8rem;
   padding-bottom: 9rem;
 }
 
@@ -180,7 +88,7 @@ tints:
 .destinations img {
   width: 100%;
   height: 100%;
-  max-height: 35rem;
+  max-height: 40rem;
   transition: all 300ms;
 }
 
@@ -277,7 +185,7 @@ tints:
 /* testimonials */
 .section-testimonials {
   text-align: center;
-  padding: 8rem 0;
+  padding: 8rem 0 10rem;
   background-color: #fffbeb;
 }
 
@@ -299,12 +207,11 @@ tints:
 .testimonial {
   background-color: #f9c74f;
   display: flex;
-  padding: 2rem 0 2rem 5rem;
+  padding: 2rem 2rem 2rem 4.5rem;
   gap: 7rem;
   box-shadow: 0.5rem 0.5rem 5rem rgb(0, 0, 0, 0.3);
   border-radius: 5px;
   text-align: left;
-  display: flex;
   align-items: center;
 }
 
@@ -392,22 +299,21 @@ tints:
 
 
 .product-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
+  max-width: 100rem;
   align-items: center;
   flex-direction: column;
-  max-width: 75rem;
-  margin: auto;
-  gap: 1.5rem;
+  gap: 3rem;
+  padding: 12rem 9rem;
 }
 
-.product-overview h2 {
+.product-overview .heading-secondary {
   color: #50a3e7;
-  font-size: 7.7rem;
+  font-size: 7.5rem;
   text-align: center;
   font-family: 'Lobster', 'Inter', sans-serif;
-  letter-spacing: 0.7rem;
+  letter-spacing: 1rem;
 }
 
 .product-overview p {
@@ -438,13 +344,11 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 4rem 5rem;
-  max-width: 140rem;
-  margin: auto;
 }
 
 .links {
   display: flex;
-  gap: 4rem;
+  gap: 3.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -464,7 +368,7 @@ footer {
 }
 
 .links i {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: rgb(179, 223, 151);
 }
 
@@ -495,7 +399,6 @@ footer {
   font-weight: bold;
   font-size: 2rem;
   display: none;
-  
 }
 
 
@@ -506,107 +409,3 @@ footer {
 
 
 /* media querie */
-@media(max-width: 720px) {
-  .hero .primary-heading {
-    margin-bottom: 4rem;
-    font-size: 2.8rem;
-  }
-  .cta, .outline {
-    display: block;
-    max-width: 25rem;
-    margin: 2.2rem auto 0;
-  }
-
-  body .btn {
-    font-size: 1.6rem;
-  }
-
-  .product-overview .product-container h2.heading-secondary {
-    font-size: 4rem;
-  }
-  .product-overview .product-container p {
-    font-size: 1.4rem;
-  }
-
-  .steps {
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
-  }
-
-  .section-destination .destinations {
-    grid-template-columns: 1fr;
-  }
-
-  .section-testimonials .testimonial img {
-    display: none;
-  }
-
-  
-}
-
-
-@media(max-width: 1010px) {
-  .main-nav {
-    display: none;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .primary-heading {
-    padding-left: 5rem;
-    font-size: 3.3rem;
-    margin-bottom: 6rem;
-  }
-
-  .logo {
-    font-size: 2rem;
-  }
-
-  .hero img {
-    width: 75%;
-    display: inline-block;
-    margin: 8rem auto 1rem;
-  }
-
-  .destinations {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .product-container h2.heading-secondary {
-    font-size: 4.8rem;
-  }
-
-  .product-container p {
-    font-size: 1.6rem;
-  }
-
-  
-}
-
-
-@media(max-width: 840px) {
-  .testimonials {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    max-width: 70rem;
-  }
-  .product-container p {
-    margin-right: 3rem;
-    margin-left: 3rem;
-  }
-  footer .footer {
-    flex-direction: column;
-    gap: 4.7rem;
-    align-items: center;
-    padding: 7rem;
-  }
-
-  footer .footer .links {
-    gap: 7rem;
-  } 
-}
