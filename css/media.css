@@ -165,12 +165,20 @@
 
   .section-destination .destinations {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .section-destination .container {
+    padding: 0;
   }
 
   .destination {
-    margin-left: 6rem;
-    margin-right: 6rem;
-    max-height: 60rem
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .destination img {
+    max-height: 50rem;
   }
 
 }

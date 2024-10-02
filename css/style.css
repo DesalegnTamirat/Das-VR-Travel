@@ -144,7 +144,7 @@
   transform: scale(1.01);
 }
 
-.destinations div {
+.destinations .destination {
   position: relative;
 }
 
