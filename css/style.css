@@ -250,17 +250,20 @@
   margin: auto;
 }
 
-
-
 .testimonial {
+  display: none;
   background-color: #f9c74f;
-  display: flex;
+  
   padding: 2rem 2rem 2rem 4.5rem;
   gap: 7rem;
   box-shadow: 0.5rem 0.5rem 5rem rgb(0, 0, 0, 0.3);
   border-radius: 5px;
   text-align: left;
   align-items: center;
+}
+
+.current-testimonial {
+  display: flex;
 }
 
 .testimonial img{
@@ -401,8 +404,6 @@ footer {
   justify-content: center;
 }
 
-
-
 .footer p {
   font-style: italic;
   font-size: 1.3rem;
@@ -456,11 +457,6 @@ p.hidden-text {
   display: none;
 }
 
-
-
 .donate p.visible {
   display: block;
 }
-
-
-/* media querie */

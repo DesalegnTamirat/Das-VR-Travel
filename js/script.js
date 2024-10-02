@@ -2,14 +2,11 @@ const header = document.querySelector("header");
 const donateBtn = document.querySelector(".donate button");
 const menuBtn = document.querySelector(".menu-nav-icon");
 const closeBtn = document.querySelector(".close-nav-icon");
-console.log(header);
-console.log(donateBtn);
-console.log(menuBtn);
-console.log(closeBtn);
+const navBtns = document.querySelectorAll(".main-nav a");
+
 
 function openMenu() {
   header.classList.add("menu-mode");
-  console.log(header);
 }
 
 function closeMenu() {
@@ -24,3 +21,5 @@ function handleClick() {
 menuBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
 donateBtn.addEventListener("click", handleClick);
+
+navBtns.forEach((navBtn) => navBtn.addEventListener("click", closeMenu));
