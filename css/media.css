@@ -69,10 +69,17 @@
     font-size: 45%;
   }
 
+  /* removing the nav lists and changing to menu */
   .main-nav {
     display: none;
   }
-
+  .menu-nav-icon, .menu-mode .close-nav-icon {
+    display: block;
+  }
+  .menu-mode .menu-nav-icon, .close-nav-icon {
+    display: none;
+  }
+  
   .hero {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -114,7 +121,7 @@
 
 @media(max-width: 38em) {
   html {
-    font-size: 30%;
+    font-size: 39%;
   }
 
   .hero {

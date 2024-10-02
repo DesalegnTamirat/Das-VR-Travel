@@ -3,10 +3,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/a57ca790d9.js" crossorigin="anonymous"></script>
+
+  <!-- favicon -->
   <link rel="icon" type="image/png" href="/images/icons/">
+
+  <!-- css links -->
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+
+  <!-- script links for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <title>Das VR Travel</title>
 </head>
 
@@ -32,24 +40,26 @@
         </a></li>
       </ul>
     </nav>
+    <button class="nav-icon menu-nav-icon"><ion-icon name="menu-outline"></ion-icon></button>
+    <button class="nav-icon close-nav-icon"><ion-icon name="close-outline"></ion-icon></button>
   </header>
   
   <main>
-  <section class="section-hero">
-    <div class="hero container">
-      <div class="hero-text">  
-        <h1 class="primary-heading">
+    <section class="section-hero">
+      <div class="hero container">
+        <div class="hero-text">  
+          <h1 class="primary-heading">
           Travel the World from the Comfort of Your Home
         </h1>
         <p class="hero-description"></p>
-        <a href="#" class="btn cta">Start Your Adventure</a>
-        <a href="#" class="btn outline ml-1">Learn More </a>
+        <a href="#cta-form" class="btn cta">Start Your Adventure</a>
+        <a href="#product-overview" class="btn outline ml-1">Learn More </a>
       </div>
       <img src="images/hero2.png" class=" hero-img" alt="">
     </div>
   </section>
-
-  <section class="product-overview">
+  
+  <section class="product-overview" id="product-overview">
     <div class="container product-container">
       <h2 class="heading-secondary">Discover the World Without Limits
       </h2>
@@ -59,7 +69,7 @@
       </a>
     </div>
   </section>
-
+  
   <section class="section-steps" id="steps">
     <div class="guide container">  
       <h2 class="heading-secondary">Find Your happiness🥰 in life</h2>
@@ -81,18 +91,18 @@
           <p>Explore! - Walk the streets, visit landmarks, and see the sights.</p>
         </div>
       </div>
-        <a href="#places-to-visit" class="btn">Places to Visit</a>
-  </section>
-
-  <section class="section-testimonials" id="testimonials">
-    <h2>Members who found their happiness</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <img src="images/testimonials/person6.jpg" alt="">
-        <div class="testimonial-text"><p>I have never experienced something like this before. It is miracle. Experiencing different cute volcanos is beyond everything</p>
+      <a href="#places-to-visit" class="btn">Places to Visit</a>
+    </section>
+    
+    <section class="section-testimonials" id="testimonials">
+      <h2>Members who found their happiness</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="images/testimonials/person6.jpg" alt="">
+          <div class="testimonial-text"><p>I have never experienced something like this before. It is miracle. Experiencing different cute volcanos is beyond everything</p>
+          </div>
         </div>
-      </div>
-      <i class="fa-solid fa-caret-right caret caret-right"></i>
+        <i class="fa-solid fa-caret-right caret caret-right"></i>
       <i class="caret caret-left fa-solid fa-caret-left"></i>
       <div class="dots">
         <div></div>
@@ -105,72 +115,67 @@
       </div>
     </div>
   </section>
-
+  
   <section id="places-to-visit" class="section-destination">
     <div class="container">
-    <h2 class="heading-secondary">
-      Explore Our Destinations
-    </h2>
-    <div class="destinations container">
-      <div><img src="images/places/place1.jpg" alt="">
-      <a href="#" class="btn">View in VR</a>
-      </div>
-      <div><img src="images/places/place2.jpg" alt="">
-      <a href="#" class="btn">View in VR</a>
-      </div>
-      <div class="big-height"><img src="images/places/place3.jpg" alt="">
-      <a href="#" class="btn">View in VR</a>
-      </div>
-      <div><img src="images/places/place4.jpg" alt="">
-      <a href="#" class="btn">View in VR</a>
-      </div>
+      <h2 class="heading-secondary">
+        Explore Our Destinations
+      </h2>
+      <div class="destinations container">
+        <div><img src="images/places/place1.jpg" alt="">
+          <a href="#" class="btn">View in VR</a>
+        </div>
+        <div><img src="images/places/place2.jpg" alt="">
+          <a href="#" class="btn">View in VR</a>
+        </div>
+        <div class="big-height"><img src="images/places/place3.jpg" alt="">
+          <a href="#" class="btn">View in VR</a>
+        </div>
+        <div><img src="images/places/place4.jpg" alt="">
+          <a href="#" class="btn">View in VR</a>
+        </div>
       <div><img src="images/places/place5.jpg" alt="">
-      <a href="#" class="btn">View in VR</a>
+        <a href="#" class="btn">View in VR</a>
       </div>
       <div><img src="images/places/place6.jpg" alt="">
-      <a href="#" class="btn">View in VR</a>
+        <a href="#" class="btn">View in VR</a>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
+</section>
 </main>
 
 <footer>
   <div class="footer container">
-  <div class="contact-info">
-    <p><span>Email:</span> desalegntamirateshetu@gmail.com</p>
-    <p>
-      <span>Phonenumber:</span> +251-979474672
-    </p>
-    <p>
-
-      <span>Address:</span> Addis Ababa Ethiopia
-    </p>
+    <div class="contact-info">
+      <p><span>Email:</span> desalegntamirateshetu@gmail.com</p>
+      <p>
+        <span>Phonenumber:</span> +251-979474672
+      </p>
+      <p>
+        
+        <span>Address:</span> Addis Ababa Ethiopia
+      </p>
+    </div>
+    <div class="links">
+      <a href="https://instagram.com/desalegn.tamirat/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href=""  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/desalegn-tamirat-19727520a"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/DesalegnTamirat"  target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <div class="donate"><button>Donate</button>
+      <p class="hidden-text">
+        1000-251-974-218 😉😂
+      </p>
+    </div>
+    
   </div>
-  <div class="links">
-    <a href="">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href=""><i class="fa-brands fa-twitter"></i></a>
-    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-    <a href=""><i class="fa-brands fa-github"></i></a>
-  </div>
-  <div class="donate"><button onclick="handleClick()">Donate</button>
-    <p class="hidden-text">
-      1000-251-974-218 😉😂
-    </p>
-  </div>
-
-</div>
 </footer>
 
-<script>
-  
-  function handleClick() {
-    const hidden = document.querySelector(".hidden-text");
-    console.log(hidden);
-    hidden.classList.toggle("visible");
-  }
-</script>
+ 
+<script src="js/script.js"></script>
+
 </body>
 </html>
