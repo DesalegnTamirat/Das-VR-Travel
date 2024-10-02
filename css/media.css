@@ -148,12 +148,25 @@
   }
 
   .testimonials {
-    width: 80%;
+    width: 90%;
   }
 
   .testimonial {
-    gap: 4rem;
+    flex-direction: column;
+    gap: 10rem;
   }
+
+  .testimonial img {
+    position: static;
+    width: 50%;
+    height: 80%;
+    max-height: 25rem;
+  }
+
+  .testimonial p {
+    font-size: 1.6rem;
+  }
+  
 
   .dots {transform: translate(-20%, 3rem);}
    
