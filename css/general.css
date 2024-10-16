@@ -1,48 +1,53 @@
 /* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;800;900&display=swap');
 
 /* General Styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 400ms;
+  transition: all 300ms ease-in-out;
 }
 
 *:focus {
-  outline: 6px solid white;
+  outline: 3px dashed #ffcc00; /* Visible and accessible focus outline */
+  outline-offset: 2px;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Intel", sans-serif;
-  line-height: 1;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
   font-weight: 400;
-  color: #555;
-  background-color: #ebf5fec7;
+  color: #444;
+  background-color: #f0f4f8; /* Softer background for better contrast */
 }
 
-
 /* Element Styles */
-.primary-heading{
+.primary-heading {
   font-size: 4.8rem;
   font-weight: 800;
-  color: #333;
-  margin-bottom: 8rem;
-  letter-spacing: -0.8px;
-  line-height: 1.1;
+  color: #222;
+  margin-bottom: 6rem; /* Less margin for tighter layout */
+  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .btn {
   text-decoration: none;
   font-size: 2rem;
-  padding: 1.2rem 2.4rem;
-  border-radius: 1.2rem;
+  padding: 1.4rem 2.8rem; /* Slightly larger padding */
+  border-radius: 1.6rem; /* More rounded corners */
+  transition: background-color 200ms ease-in-out, transform 100ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05); /* Subtle hover effect */
 }
 
 .cta {
@@ -52,30 +57,31 @@ body {
 }
 
 .cta:hover {
-  background: #297BC0;
+  background-color: #297BC0;
 }
 
 .outline {
   background-color: #C2E1FB;
   color: #222;
   font-weight: 500;
+  border: 1px solid #99CDF8; /* Subtle border for clarity */
 }
 
 .outline:hover {
   background-color: #99CDF8;
 }
 
-
-
+/* Navigation Icon */
 .nav-icon {
   position: fixed;
   right: 2rem;
+  top: 2rem; /* Ensure consistent placement */
   border: none;
   color: #081926;
   background: none;
   font-size: 5rem;
   cursor: pointer;
-  transition: all 300ms;
+  transition: transform 300ms, color 200ms ease-in-out;
   z-index: 3;
 }
 
@@ -84,14 +90,11 @@ body {
   color: #21629a;
 }
 
-
-
-
 /* Utility Styles */
 .container {
-  max-width: 130rem;
-  margin: auto;
-  padding: 0 4.8rem;
+  max-width: 120rem; /* Slightly smaller for better readability */
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .ml-1 {
@@ -99,5 +102,5 @@ body {
 }
 
 .ml-2 {
-  margin-left: 3.8rem;
+  margin-left: 3.2rem;
 }

@@ -1,105 +1,146 @@
-@media(max-width: 78em) {
+/* Larger Tablets and Small Desktops */
+@media (max-width: 79em) {
   html {
-    font-size:56%;
+    font-size: 57%; /* Slightly larger for better readability */
   }
 
   .primary-heading {
-    font-size: 4.2rem;
-  }  
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
 
-  .main-nav a{
-    padding: 1.2rem 1.5rem;
+  .main-nav a {
+    padding: 1rem 1.8rem;
   }
 
   .product-overview .heading-secondary {
-    font-size: 6.7rem;
-  }
-
-  .testimonial {
-    gap: 6rem;
-  }
-
-  .destinations {
-    grid-template-columns: 1fr 1fr;
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-}
-
-@media(max-width: 62em) {
-  html {
-    font-size:50%;
-  }
-
-  .primary-heading {
-    font-size: 3.8rem;
-  }
-
-  .main-nav a{
-    padding: 1.2rem;
-  }
-
-  .product-overview .heading-secondary {
-    font-size: 6rem;
+    font-size: 6.5rem;
   }
 
   .testimonial {
     gap: 5rem;
   }
 
-  footer .footer {
-    flex-direction: column;
-    gap: 4.7rem;
-    align-items: center;
-    padding: 7rem;
-  }
-
-  .contact-info {
-    margin-left: 6rem;
-  }
-
-  footer .footer .links {
-    gap: 6rem;
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem 3rem;
   }
 }
 
-
-@media(max-width: 50em) {
+/* Tablets and Medium Screens */
+@media (max-width: 64em) {
   html {
-    font-size: 45%;
+    font-size: 52%;
   }
 
-  /* removing the nav lists and changing to menu */
+  .primary-heading {
+    font-size: 4rem;
+  }
+
+  .main-nav a {
+    padding: 1rem;
+  }
+
+  .product-overview .heading-secondary {
+    font-size: 5.8rem;
+  }
+
+  .testimonial {
+    gap: 4rem;
+  }
+
+  footer .footer {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    padding: 6rem;
+  }
+
+  .contact-info {
+    margin: 4rem 0;
+  }
+
+  footer .footer .links {
+    gap: 5rem;
+  }
+}
+
+/* Small Tablets and Landscape Phones */
+@media (max-width: 55em) {
+  html {
+    font-size: 48%; 
+  }
+
+  /* Replace nav lists with menu icon */
   .main-nav {
     display: none;
   }
   .menu-nav-icon, .menu-mode .close-nav-icon {
     display: block;
+    font-size: 2rem;
+    padding: 1rem;
   }
   .menu-mode .menu-nav-icon, .close-nav-icon {
     display: none;
   }
-  
+
   .hero {
     grid-template-columns: 1fr;
-    justify-content: center;
     text-align: center;
-    padding: 2rem 15rem 5rem;
+    padding: 2rem 10rem;
   }
 
   .primary-heading {
-    font-size: 5rem;
-    margin-bottom: 5rem;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
   }
 
   .hero img {
-    width: 70%;
-    display: inline-block;
-    margin: 5rem auto 1rem;
+    width: 75%;
+    margin: 3rem auto;
   }
-  
+
   .product-container .heading-secondary {
-    font-size: 6rem; 
+    font-size: 5.2rem;
+  }
+
+  .testimonials {
+    width: 85%;
+  }
+
+  .testimonial {
+    gap: 3rem;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+/* Portrait Phones and Small Screens */
+@media (max-width: 39em) {
+  html {
+    font-size: 45%; 
+  }
+
+  .hero {
+    padding: 2rem 3rem;
+  }
+
+  .primary-heading {
+    font-size: 3.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero img {
+    width: 80%;
+    margin: 4rem auto;
+  }
+
+  .product-container .heading-secondary {
+    font-size: 4.5rem;
   }
 
   .testimonials {
@@ -107,73 +148,30 @@
   }
 
   .testimonial {
-    gap: 4rem;
-  }
-  
-  .steps {
     flex-direction: column;
-    align-items: center;
-    gap: 5.5rem;
-  }
-  
-}
-
-
-@media(max-width: 38em) {
-  html {
-    font-size: 39%;
-  }
-
-  .hero {
-    padding: 0 5rem 3rem;
-  }
-
-  .primary-heading {
-    font-size: 4rem;
-    margin-bottom: 5rem;
-  }
-
-  .heading-secondary {
-    font-size: 2rem;
-  }
-
-  .hero img {
-    width: 70%;
-    display: inline-block;
-    margin: 5rem auto 1rem;
-  }
-  
-  .product-container .heading-secondary {
-    font-size: 6rem; 
-  }
-
-  .testimonials {
-    width: 90%;
-  }
-
-  .testimonial {
-    flex-direction: column;
-    gap: 10rem;
+    gap: 6rem;
   }
 
   .testimonial img {
-    position: static;
     width: 50%;
-    height: 80%;
-    max-height: 25rem;
+    height: 30rem;
+    margin-bottom: 2rem;
   }
 
   .testimonial p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 1.8;
   }
-  
 
-  .dots {transform: translate(-20%, 3rem);}
-   
   .cta, .outline {
     display: block;
-    max-width: 25rem;
-    margin: 2.2rem auto 0;
+    width: 100%;
+    max-width: 30rem;
+    margin: 2rem auto;
+  }
+
+  .dots {
+    transform: translate(-15%, 2rem);
   }
 
   .section-destination .destinations {
@@ -182,20 +180,45 @@
   }
 
   .section-destination .container {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 
   .destination {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem;
   }
 
   .destination img {
-    max-height: 50rem;
+    max-height: 40rem;
+    width: 100%;
+    object-fit: cover;
   }
-
 }
 
+/* Ultra-Small Devices */
+@media (max-width: 27em) {
+  html {
+    font-size: 36%;
+  }
 
+  .primary-heading {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
 
+  .hero img {
+    width: 85%;
+    margin: 2rem auto;
+  }
 
+  .product-container .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .testimonial p {
+    font-size: 1.4rem;
+  }
+
+  .cta, .outline {
+    max-width: 20rem;
+  }
+}
